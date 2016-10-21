@@ -75,7 +75,9 @@ apt-get install -y --no-install-recommends vim\
 
 [ ! -x /usr/bin/docker ] && curl -L https://get.docker.com | bash
 
-apt-get install -y python-ipaddress docker-compose
+(curl -L "https://github.com/docker/compose/releases/download/1.8.1/docker-compose-$(uname -s)-$(uname -m)" > /usr/bin/docker-compose && \
+  chmod +x /usr/bin/docker-compose)
+  
 apt-get install -y golang
 
 [ ! -d /var/lib/ngrok ] && (cd /var/lib && \
