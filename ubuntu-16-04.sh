@@ -75,3 +75,4 @@ apt-get install -y --no-install-recommends vim\
 
 curl -L https://get.docker.com | bash
 
+apt-get install -y docker-compose
