@@ -71,6 +71,8 @@ apt-get install -y --no-install-recommends vim\
   wget\
   redis-tools\
   less\
-  bc
+  bc\
+  ngrok-client
 
 curl -L https://get.docker.com | bash
+
