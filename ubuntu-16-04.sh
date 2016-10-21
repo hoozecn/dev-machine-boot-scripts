@@ -58,7 +58,6 @@ apt-get install -y --no-install-recommends vim\
   unzip\
   vim\
   ruby-dev\
-  ruby-mkrf\
   tmux\
   tree\
   python-dev\
