@@ -73,6 +73,12 @@ apt-get install -y --no-install-recommends vim\
   bc\
   ngrok-client
 
-curl -L https://get.docker.com | bash
+[ ! -x /usr/bin/docker ] && curl -L https://get.docker.com | bash
 
 apt-get install -y python-ipaddress docker-compose
+apt-get install -y golang
+
+[ ! -d /var/lib/ngrok ] && (cd /var/lib && \
+  git clone https://github.com/inconshreveable/ngrok.git && \
+  cd ngrok && make && \
+  cp bin/ngrok /usr/bin/ngrok)
