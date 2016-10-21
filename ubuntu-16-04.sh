@@ -73,4 +73,4 @@ apt-get install -y --no-install-recommends vim\
   less\
   bc
 
-
+curl -L https://get.docker.com | bash
