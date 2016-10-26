@@ -79,8 +79,3 @@ apt-get install -y --no-install-recommends vim\
   chmod +x /usr/bin/docker-compose)
   
 apt-get install -y golang
-
-[ ! -d /var/lib/ngrok ] && (cd /var/lib && \
-  git clone https://github.com/inconshreveable/ngrok.git && \
-  cd ngrok && make && \
-  cp bin/ngrok /usr/bin/ngrok)
